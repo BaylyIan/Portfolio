@@ -2,25 +2,18 @@ import React, { useState} from "react";
 import styled from 'styled-components';
 
 const Container = styled.div`
-    flex:1;
     height:auto;
-    width:100%;
+    width:700px;
     display:flex;
     flex-direction:row;
     justify-content:center;
-
 `;
 const Content = styled.div`
-    width:80%;
+    width:100%;
     height:auto;
     display:flex;
     align-items:flex-start;
     flex-direction:column;
-    /* background-color:red; */
-    padding-top:10%;
-    & > h1 {
-        margin-top:-45px;
-    }
 `;
 const SubTitle = styled.text`
     width:50%;

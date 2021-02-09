@@ -6,16 +6,11 @@ import paintbrushgreen from './paint-brush-green.png';
 import paintbrushgrey from './paint-brush-grey.png';
 
 const Container = styled.div`
-    width:100%;
-    height:50%;
-    /* background-color:red; */
-    display:flex;
-    flex-direction:column;
-`;
-const ImgCont = styled.div`
-    width:auto;
+    width:700px;
     height:auto;
     display:flex;
+    flex-direction:column;
+    margin-top:21px;
 `;
 const Icon = styled.img`
     width:50px;
