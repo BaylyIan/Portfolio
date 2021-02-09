@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 width:100%;
-height:auto;
+height:10vh;
 display:flex;
-background-color:black;
+background-color:#181818;
 justify-content:space-between;
 `;
 const LogoCont = styled.img`
     width:10%;
-    height:50px;
+    height:auto;
     border:none;
 `;
 const Nav = styled.div`
@@ -65,15 +65,15 @@ const [fillButton, setFillButton] = useState(false);
 
 const handleChangeText1 = () =>{
     setTextColor1(!textColor1);
-    setFontSize1(!fontSize1);
+    // setFontSize1(!fontSize1);
 }
 const handleChangeText2 = () =>{
     setTextColor2(!textColor2);
-    setFontSize2(!fontSize2)
+    // setFontSize2(!fontSize2)
 }
 const handleChangeText3 = () =>{
     setTextColor3(!textColor3);
-    setFontSize3(!fontSize3)
+    // setFontSize3(!fontSize3)
 }
 const handleFillButton = ()=>{
     setFillButton(!fillButton);

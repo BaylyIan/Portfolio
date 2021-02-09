@@ -3,9 +3,11 @@ import styled from 'styled-components';
 
 const Container = styled.div`
     width:100%;
-    height:auto;
+    height:100%;
     display:flex;
     justify-content:center;
+    /* background-color:red; */
+    align-items: center;
 `;
 const Content = styled.div`
     width:80%;
@@ -13,17 +15,17 @@ const Content = styled.div`
     display:flex;
     align-items:flex-start;
     flex-direction:column;
-    background-color:red;
-    padding-top:10%;
+    /* background-color:red; */
     & > h1 {
-        margin-top:-45px;
+        margin-top:-40px;
     }
 `;
 const ParagraphCont = styled.div`
     width:550px;
     height:auto;
+    line-height:1.5;
     // color:#b9b9b9
-    background-color:blue;
+    /* background-color:blue; */
 `;
 const ContactButton = styled.button`
     width:148px;
@@ -34,7 +36,7 @@ const ContactButton = styled.button`
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-top:40px;
+    margin-top:120px;
     & > p {
         font-size:20px;    
     }

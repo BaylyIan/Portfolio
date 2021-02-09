@@ -1,10 +1,12 @@
 import logo from './logo.svg';
-import './App.css';
+import Main from './pages/Main';
+import './App.scss';
+
 
 function App() {
   return (
     <div >
-        hello
+        <Main />
     </div>
   );
 }
