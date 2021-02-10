@@ -52,7 +52,7 @@ const ContactButton = styled.button`
         font-size:20px;    
     }
     @media (max-width: 768px) {
-        width:110px;
+        width:114px;
         height:36px;
         & > p {
         font-size:16px;    
