@@ -42,7 +42,7 @@ const ContactButton = styled.button`
     width:148px;
     height:42px;
     border: 2px solid #64FFDA;
-    border-radius: 2px;
+    border-radius: 3px;
     background: ${(props) => (props.fillButton ? "#3b3b3b" : "none")};
     display:flex;
     align-items:center;
@@ -51,6 +51,13 @@ const ContactButton = styled.button`
     & > p {
         font-size:20px;    
     }
+    @media (max-width: 768px) {
+        width:110px;
+        height:36px;
+        & > p {
+        font-size:16px;    
+    }
+  }
 `;
 
 const Title = ({}) => {

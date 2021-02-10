@@ -20,8 +20,9 @@ const Icon = styled.img`
 const Bar = styled.div`
     width:100%;
     height:2px;
-    background-color:${props => props.color ? "#64FFDA" : "#3A3A3A"};
+    background-color:${props => props.color ? "#64FFDA" : "#3a3a3a"};
 `;
+
 const Code = styled.div`
     width:100%;
     height:auto;
