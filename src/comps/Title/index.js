@@ -2,30 +2,41 @@ import React, { useState} from "react";
 import styled from 'styled-components';
 
 const Container = styled.div`
-    width:100%;
-    height:100%;
-    display:flex;
-    justify-content:center;
     /* background-color:red; */
-    align-items: center;
 `;
 const Content = styled.div`
-    width:80%;
-    height:auto;
     display:flex;
-    align-items:flex-start;
     flex-direction:column;
-    /* background-color:red; */
+    /* background-color:#DAD; */
+    width:80%;
+    margin-top:10vh;
+    padding-left:2vw;
     & > h1 {
-        margin-top:-40px;
+        margin:0;
+        margin-top:-2.5vh;
     }
+    @media (max-width: 768px) {
+        div{
+            & >h1{
+            font-size:36px;
+            }
+        }
+        & > h1 {
+        margin:0;
+        font-size:36px;
+    }
+  }
 `;
 const ParagraphCont = styled.div`
-    width:550px;
-    height:auto;
     line-height:1.5;
-    // color:#b9b9b9
-    /* background-color:blue; */
+    margin-top:5vh;
+    width:60%;
+    & > h3{
+        color:#b9b9b9;
+    }
+    @media (max-width: 768px) {
+        width:100%;
+  }
 `;
 const ContactButton = styled.button`
     width:148px;
@@ -36,7 +47,7 @@ const ContactButton = styled.button`
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-top:120px;
+    margin-top:5vh;
     & > p {
         font-size:20px;    
     }

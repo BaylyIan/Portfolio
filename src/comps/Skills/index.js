@@ -6,15 +6,15 @@ import paintbrushgreen from './paint-brush-green.png';
 import paintbrushgrey from './paint-brush-grey.png';
 
 const Container = styled.div`
-    width:700px;
-    height:auto;
+    flex:1;
     display:flex;
     flex-direction:column;
-    margin-top:21px;
+    margin-top:3.1vh;
+    padding:4vw;
 `;
 const Icon = styled.img`
-    width:50px;
-    height:50px;
+    width:30px;
+    height:30px;
     display:${props => props.showIcon ? "flex" : "none"};
 `;
 const Bar = styled.div`
@@ -62,8 +62,8 @@ const handleClick = () =>{
            showIcon={icon}/>
         </div>
         <div style={{display:"flex", flexDirection:"row", justifyContent:"space-around"}}>
-           <Bar/><Bar color={color} style={{borderRadius:"4px", height:"3px"}}/><Bar />
-           <Bar/><Bar color={!color} style={{borderRadius:"4px", height:"3px"}}/><Bar />
+           <Bar/><Bar color={color} style={{borderRadius:"4px", height:"2px"}}/><Bar />
+           <Bar/><Bar color={!color} style={{borderRadius:"4px", height:"2px"}}/><Bar />
         </div>
         <Code showText={text}>
             <div>

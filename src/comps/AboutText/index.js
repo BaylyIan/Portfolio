@@ -2,23 +2,26 @@ import React, { useState} from "react";
 import styled from 'styled-components';
 
 const Container = styled.div`
-    height:auto;
-    width:700px;
+    flex:1;
     display:flex;
-    flex-direction:row;
-    justify-content:center;
+    padding-left:2vw;
+    padding:4vw;
+    /* background-color:#BED; */
+    @media (max-width: 768px) {
+      width:90%;
+    }
 `;
 const Content = styled.div`
-    width:100%;
-    height:auto;
     display:flex;
     align-items:flex-start;
     flex-direction:column;
 `;
 const SubTitle = styled.text`
-    width:50%;
-    height:auto;
-
+    @media (max-width: 768px) {
+      & >h2{
+          font-size:18px;
+      }
+    }
 `;
 
 const AboutText = ({}) => { 

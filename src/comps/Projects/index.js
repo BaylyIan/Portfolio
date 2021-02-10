@@ -1,21 +1,31 @@
 import React, { useState} from "react";
 import styled from 'styled-components';
+import meditracker from './meditracker.png';
+import walk from './walk.png';
+
 
 const Container = styled.div`
-    width:100%;
-    height:50vh;
     display:flex;
     flex-direction:row;
+    /* background-color:#BBB; */
+    @media (max-width: 768px) {
+      flex-direction:column;
+    }
 `;
 const Title = styled.div`
     flex:1;
-    height:auto;
+    width:auto;
     display:flex;
     align-items:center;
     justify-content:center;
     /* background-color:green; */
     & > h2 {
         transform: rotate(270deg)
+    }
+    @media (max-width: 768px) {
+        & > h2 {
+        transform: rotate(0)
+    }
     }
 `;
 const Content = styled.div`
@@ -25,23 +35,31 @@ const Content = styled.div`
     flex-direction:row;
     padding:10px;
     flex-wrap:wrap;
+    @media (max-width: 768px) {
+       justify-content:center;
+    }
 `;
-const Project = styled.div` 
-    width:28vw;
-    height:50vh;
+const Project = styled.img`
+    width:17em;
+    height:17rem;
     background-color:#c4c4c4;
     margin:10px;
+    object-fit:cover;
+    @media (max-width: 768px) {
+        width:20em;
+        height:20rem;
+    }
 `;
 
 const Projects = ({}) => { 
 
     return<Container>
          <Title>
-             <h2>My Projects</h2>
+             <h2>Projects</h2>
          </Title>
          <Content>
-            <Project />
-            <Project />
+            <Project src={meditracker}/>
+            <Project src={walk}/>
             <Project />
          </Content>
     </Container>
