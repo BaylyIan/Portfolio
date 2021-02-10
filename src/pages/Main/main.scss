@@ -1,28 +1,13 @@
-
 .main{
-    display:flex;
-    flex-direction:column;
-}
-.nav{
-
-}
-.title{
-    // background-color: aqua;
-    height:80vh;
+   
 }
 .about{
     display:flex;
     flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    margin-top:10%;
-}
-.projects{
-    margin-top:10%;
-    // background-color: red;
-    display: flex;
-    justify-content: center;
-}
-.footer{
-    
+    margin-top:12vh;
+    // background-color:#BBB;
+    @media (max-width: 768px) {
+      flex-direction:column;
+      padding:3vh;
+    }
 }

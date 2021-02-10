@@ -5,24 +5,18 @@ import AboutText from '../../comps/AboutText';
 import Skills from '../../comps/Skills';
 import Projects from '../../comps/Projects';
 import Footer from '../../comps/Footer';
-import Side from '../../comps/Side';
 
 const Main = () => {
     return <div className="main">
-        <div className="nav">
-            <NavBar />
-        </div>
-        <div className="title"><Title /></div>
-        <div className="about">
+        <NavBar />
+        
+            <Title />
+            <div className="about">
             <AboutText />
             <Skills />
-        </div>
-        <div className="projects">
-            <Projects />
-        </div>
-        <div className="footer">
-            <Footer />
-        </div>
+            </div>
+        <Projects />
+        <Footer />
     </div>
 }
 
