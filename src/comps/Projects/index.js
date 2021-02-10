@@ -18,6 +18,7 @@ const Title = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
+    z-index:-1;
     /* background-color:green; */
     & > h2 {
         transform: rotate(270deg)

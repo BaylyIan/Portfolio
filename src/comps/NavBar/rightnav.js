@@ -41,6 +41,7 @@ const Ul = styled.ul`
       margin-top:20px;
       &:nth-child(5){
             border:2px solid #64FFDA;
+            border-radius:3px;
             color:#64FFDA;
             :hover {
 		        /* background-color: #292929; */
@@ -51,17 +52,23 @@ const Ul = styled.ul`
   }
 `;
 
-const RightNav = ({ open }) => {
+const RightNav = ({ open, scrollHome, scrollAbout, scrollProjects, handleOpen }) => {
   
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li>About</li>
-      <li>Projects</li>
-      <li>Contact</li>
+      <li onClick={scrollHome}>Home</li>
+      <li onClick={scrollAbout}>About</li>
+      <li onClick={scrollProjects}>Projects</li>
+      <li >Contact</li>
       <li >Resume</li>
     </Ul>
   )
+}
+
+RightNav.defaultProps = {
+  scrollProjects: () => {},
+  scrollAbout: () => {},
+  scrollHome: () => {},
 }
 
 export default RightNav

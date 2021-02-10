@@ -14,13 +14,17 @@ const Nav = styled.div`
     }
 `;
 
-const NavBar = () => {
+const NavBar = ({scrollHome, scrollAbout, scrollProjects }) => {
     return (
         <Nav>
             <div>
                 <h3>Ian Bayly</h3>
             </div>
-            <Burger />
+            <Burger 
+            scrollHome={scrollHome}
+            scrollAbout={scrollAbout}
+            scrollProjects={scrollProjects}
+            />
         </Nav>
     )
 }
