@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Pdf from './Resume_v1.pdf';
 
 const Ul = styled.ul`
     list-style: none;
@@ -39,15 +40,16 @@ const Ul = styled.ul`
     li {
       color: #fff;
       margin-top:20px;
-      &:nth-child(5){
-            border:2px solid #64FFDA;
+    }
+    & > a{
+      & > li {
+        border:2px solid #64FFDA;
             border-radius:3px;
             color:#64FFDA;
             :hover {
 		        /* background-color: #292929; */
 		        cursor: pointer;
-	}
-        }
+            }}
     }
   }
 `;
@@ -60,7 +62,7 @@ const RightNav = ({ open, scrollHome, scrollAbout, scrollProjects, handleOpen })
       <li onClick={scrollAbout}>About</li>
       <li onClick={scrollProjects}>Projects</li>
       <li >Contact</li>
-      <li >Resume</li>
+      <a href = {Pdf} target = "_blank"><li >Resume</li></a>
     </Ul>
   )
 }
