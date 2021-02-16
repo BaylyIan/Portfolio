@@ -35,9 +35,9 @@ const IconCont = styled.div`
 const Icon = styled.img`
     width:1.5rem;
     height:1.5rem;
-    border:2.5px solid #64FFDA;
+    border:2px solid #64FFDA;
     padding:4px;
-    border-radius:10px;
+    border-radius:8px;
     @media (max-width: 768px) {
         width:1rem;
         height:1rem;
@@ -48,14 +48,20 @@ const Footer = ({}) => {
 
     return<div>
     <Container>
-       <div><h2>Logo</h2></div>
+       <div><h2 style={{color:"white", fontSize:"16px"}}>Ian Bayly</h2></div>
        <IconCont>
-           <Icon src={Twitter} />
-           <Icon src={Github} />
-           <Icon src={Linked} />
+       <a target="_blank" style={{textDecoration:"none"}} href="https://twitter.com/wellthatsuxks?lang=en/">
+       <Icon src={Twitter} />
+        </a>
+        <a target="_blank" style={{textDecoration:"none"}} href="https://github.com/BaylyIan?tab=repositories/">
+       <Icon src={Github} />
+        </a>
+        <a target="_blank" style={{textDecoration:"none"}} href="https://www.linkedin.com/in/ian-bayly-635829204//">
+       <Icon src={Linked} />
+        </a>
        </IconCont>
        <h3>ianbaylyy@gmail.com</h3>
-       <h3>@ 2021 Ian Bayly. All rights reserved</h3>
+
     </Container>
     </div>
 }

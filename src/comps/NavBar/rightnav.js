@@ -10,21 +10,28 @@ const Ul = styled.ul`
     margin-block-start: 0;
     margin-block-end: 0;
     font-size:20px;
-  li {
-    padding: 6px 20px;
-    color:#fff;
-    :hover {
+    font-family: 'Roboto Mono';
+    li {
+      padding: 6px 20px;
+      color:#fff;
+      font-size:14px;
+      :hover {
 		    color:#64FFDA;
 		    cursor: pointer;
-	    }
-    &:nth-child(5){
-        border:2px solid #64FFDA;
-        color:#64FFDA;
-        :hover {
-		    background-color: #292929;  
-	    }
+        }
     }
-  }
+    a {
+      & > li{
+       
+        border:2px solid #64FFDA;
+            border-radius:3px;
+            color:#64FFDA;
+            :hover {
+		        /* background-color: #292929; */
+		        cursor: pointer;
+            }
+      }
+    }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: #181818;
@@ -33,7 +40,7 @@ const Ul = styled.ul`
     top: 0;
     right: 0;
     height: 100vh;
-    width: 300px;
+    width: 100vw;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     font-size:18px;
@@ -44,33 +51,33 @@ const Ul = styled.ul`
     & > a{
       & > li {
         border:2px solid #64FFDA;
-            border-radius:3px;
-            color:#64FFDA;
-            :hover {
-		        /* background-color: #292929; */
-		        cursor: pointer;
-            }}
+        border-radius:3px;
+        color:#64FFDA;
+        :hover {
+		      cursor: pointer;
+        }
+      }
     }
   }
 `;
 
 const RightNav = ({ open, scrollHome, scrollAbout, scrollProjects, handleOpen }) => {
-  
+
   return (
     <Ul open={open}>
       <li onClick={scrollHome}>Home</li>
       <li onClick={scrollAbout}>About</li>
       <li onClick={scrollProjects}>Projects</li>
       <li >Contact</li>
-      <a href = {Pdf} target = "_blank"><li >Resume</li></a>
+      <a href={Pdf} target="_blank" style={{textDecoration:"none"}}><li >Resume</li></a>
     </Ul>
   )
 }
 
 RightNav.defaultProps = {
-  scrollProjects: () => {},
-  scrollAbout: () => {},
-  scrollHome: () => {},
+  scrollProjects: () => { },
+  scrollAbout: () => { },
+  scrollHome: () => { },
 }
 
 export default RightNav

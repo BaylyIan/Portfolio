@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
     /* background-color:red; */
+    z-index:-1;
 `;
 const Content = styled.div`
     display:flex;
@@ -11,9 +12,10 @@ const Content = styled.div`
     width:80%;
     margin-top:10vh;
     padding-left:2vw;
+    padding-bottom:7vh;
     & > h1 {
         margin:0;
-        margin-top:-2.5vh;
+        margin-top:-1vh;
     }
     @media (max-width: 768px) {
         div{
@@ -39,7 +41,7 @@ const ParagraphCont = styled.div`
   }
 `;
 const ContactButton = styled.button`
-    width:148px;
+    width:150px;
     height:42px;
     border: 2px solid #64FFDA;
     border-radius: 3px;
@@ -47,15 +49,17 @@ const ContactButton = styled.button`
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-top:5vh;
+    margin-top:12vh;
     & > p {
-        font-size:20px;    
+        font-size:14px;
+        font-family: 'Roboto Mono';   
     }
     @media (max-width: 768px) {
-        width:114px;
+        width:122px;
         height:36px;
         & > p {
-        font-size:16px;    
+        font-size:16px; 
+        font-family: 'Roboto Mono';   
     }
   }
 `;

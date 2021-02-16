@@ -6,11 +6,16 @@ import paintbrushgreen from './paint-brush-green.png';
 import paintbrushgrey from './paint-brush-grey.png';
 
 const Container = styled.div`
-    flex:1;
+width:40vw;
     display:flex;
     flex-direction:column;
-    margin-top:3.1vh;
-    padding:4vw;
+    /* padding:4vw; */
+    padding-left:2vw;
+    padding-right:2vw;
+    /* background-color:#DBD; */
+    @media (max-width: 768px) {
+      width:90%;
+    }
 `;
 const Icon = styled.img`
     width:30px;
@@ -52,7 +57,7 @@ const handleClick = () =>{
     
     return<Container>
 
-        <div style={{display:"flex", flexDirection:"row", justifyContent:"space-around"}} onClick={handleClick}>
+        <div style={{display:"flex", flexDirection:"row", justifyContent:"space-around", marginTop:"35px"}} onClick={handleClick}>
            <Icon src={codinggreen}
            showIcon={icon}/>
            <Icon src={codinggrey}
@@ -86,7 +91,7 @@ const handleClick = () =>{
                 <h3>- Adobe Illustrator</h3>
                 <h3>- Adobe Photoshop</h3>
                 <h3>- Adobe XD</h3>
-                <h3>- Figma</h3>
+                <h3>- Adobe After Effects</h3>
                 <h3>- Invision</h3>
             </div>
         </Art>

@@ -18,7 +18,7 @@ const NavBar = ({scrollHome, scrollAbout, scrollProjects }) => {
     return (
         <Nav>
             <div>
-                <h3>Ian Bayly</h3>
+                <h2 style={{color:"white", fontSize:"16px"}}>Ian Bayly</h2>
             </div>
             <Burger 
             scrollHome={scrollHome}

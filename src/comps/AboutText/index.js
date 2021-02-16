@@ -2,11 +2,11 @@ import React, { useState} from "react";
 import styled from 'styled-components';
 
 const Container = styled.div`
-    flex:1;
+    width:40vw;
     display:flex;
-    padding-left:2vw;
-    padding:4vw;
     /* background-color:#BED; */
+    padding-left:4vw;
+    padding-right:4vw;
     @media (max-width: 768px) {
       width:90%;
     }
@@ -20,6 +20,7 @@ const SubTitle = styled.text`
     @media (max-width: 768px) {
       & >h2{
           font-size:18px;
+          font-family: 'Roboto Mono';
       }
     }
 `;
