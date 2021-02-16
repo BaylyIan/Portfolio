@@ -1,16 +1,28 @@
 .main{
    
 }
+.title{
+    // background-color:#dad;
+    z-index:auto;
+}
+.nav{
+    z-index:20;
+}
+
 .about{
     display:flex;
     flex-direction: row;
     margin-top:12vh;
+    z-index:auto;
     // background-color:#BBB;
     @media (max-width: 768px) {
       flex-direction:column;
       padding:3vh;
+    z-index:auto;
     }
 }
+
 .projects{
-    margin-top:5vh;
+    margin-top:20vh;
+    z-index:auto;
 }
