@@ -68,17 +68,16 @@ const Project = styled.img`
     @media (max-width: 656px) {
         width:20em;
         height:20rem;
-        padding-top:1rem;
+        margin-top:1rem;
     }
 `;
 const Info = styled.div`
     width:65%;
     flex:1.25;
     height:17rem;
-    /* background-color:#DAD; */
+    background-color:#DAD;
     display:flex;
     flex-direction:column;
-    align-items:flex-start;
     margin-left:1rem;
     justify-content:space-between;
     @media (max-width: 656px) {
