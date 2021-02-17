@@ -58,7 +58,7 @@ const ContactButton = styled.button`
         width:122px;
         height:36px;
         & > p {
-        font-size:16px; 
+        font-size:14px; 
         font-family: 'Roboto Mono';   
     }
   }
