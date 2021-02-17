@@ -13,24 +13,27 @@ const Main = () => {
     const proj = useRef(null);
     const ab = useRef(null);
     const hom = useRef(null);
+    const con = useRef(null);
 
     const scrollProjects = () => proj.current.scrollIntoView();
     const scrollHome = () => hom.current.scrollIntoView();
     const scrollAbout = () => ab.current.scrollIntoView();
+    const scrollContact = () => con.current.scrollIntoView();
 
     return <div className="main">
         <div className="nav"><NavBar 
             scrollHome={scrollHome}
             scrollAbout={scrollAbout}
             scrollProjects={scrollProjects}
+            scrollContact={scrollContact}
         /></div>
-            <div ref={hom} className={`title`}><Title /></div>
+            <div ref={hom} className={`title`}><Title scrollContact={scrollContact}/></div>
             <div ref={ab} className={`about`} >
             <AboutText />
             <Skills />
             </div>
-            <div ref={proj} className="projects"><Projects /></div>
-        <div><Footer /></div>
+            <div ref={proj} className={`projects`}><Projects /></div>
+        <div ref={con}><Footer/></div>
     </div>
 }
 

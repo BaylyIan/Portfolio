@@ -47,6 +47,7 @@ const Ul = styled.ul`
     li {
       color: #fff;
       margin-top:20px;
+      font-size:18px;
     }
     & > a{
       & > li {
@@ -61,14 +62,14 @@ const Ul = styled.ul`
   }
 `;
 
-const RightNav = ({ open, scrollHome, scrollAbout, scrollProjects, handleOpen }) => {
+const RightNav = ({ open, scrollHome, scrollAbout, scrollProjects, scrollContact, handleOpen }) => {
 
   return (
     <Ul open={open}>
       <li onClick={scrollHome}>Home</li>
       <li onClick={scrollAbout}>About</li>
       <li onClick={scrollProjects}>Projects</li>
-      <li >Contact</li>
+      <li onClick={scrollContact}>Contact</li>
       <a href={Pdf} target="_blank" style={{textDecoration:"none"}}><li >Resume</li></a>
     </Ul>
   )
@@ -78,6 +79,7 @@ RightNav.defaultProps = {
   scrollProjects: () => { },
   scrollAbout: () => { },
   scrollHome: () => { },
+  scrollContact: () =>{},
 }
 
 export default RightNav
