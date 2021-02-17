@@ -131,7 +131,7 @@ const Projects = ({}) => {
                     <p style={{fontStyle:"italic"}}>Front-end developer</p> 
                     <p>Our team was assigned to build a to-do list application with various sorting/filtering features features. Using React, MySql and Express, we built a medication tracker which allows you to keep track of all your medications for the day.   </p>
                     </div>
-                    <div style={{position:"relative", bottom:"0"}}>
+                    <div style={{}}>
                     <a target="_blank" style={{textDecoration:"none"}} href="https://github.com/RinaHan/Tracking-List">
                         <FiGithub size={27} style={{color:"white"}}/>
                     </a>
@@ -150,7 +150,7 @@ const Projects = ({}) => {
                     <p style={{fontStyle:"italic"}}>Front-end developer / UX/UI Designer</p> 
                     <p>Walk is the first social media dating app built for dogs. With a simple, intuitive user interface complimented by a attractive colour pallete, Walk connects people through their common love of dogs. Built in React Native, features included profile setup, posts, likes, chatting, and more.</p>
                     </div>
-                    <div style={{marginTop:"10px"}}>
+                    <div style={{}}>
                     <a target="_blank" style={{textDecoration:"none"}} href="https://github.com/BaylyIan/Walk">
                         <FiGithub size={27} style={{color:"white"}}/>
                     </a>
