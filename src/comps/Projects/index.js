@@ -74,8 +74,8 @@ const Project = styled.img`
 const Info = styled.div`
     width:65%;
     flex:1.25;
-    height:17rem;
-    background-color:#DAD;
+    height:auto;
+    /* background-color:#DAD; */
     display:flex;
     flex-direction:column;
     margin-left:1rem;
