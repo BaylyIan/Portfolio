@@ -1,9 +1,10 @@
 .main{
-   
+   width:100vw;
+   box-sizing:border-box;
 }
 .title{
     // background-color:#dad;
-    z-index:auto;
+   z-index:-1;
 }
 .nav{
     z-index:20;
@@ -13,16 +14,16 @@
     display:flex;
     flex-direction: row;
     margin-top:12vh;
-    z-index:auto;
     // background-color:#BBB;
     @media (max-width: 768px) {
       flex-direction:column;
       padding:3vh;
-    z-index:auto;
     }
 }
 
 .projects{
     margin-top:20vh;
-    z-index:auto;
+    @media (max-width: 768px) {
+        align-items: center;
+      }
 }

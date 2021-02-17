@@ -64,7 +64,7 @@ const ContactButton = styled.button`
   }
 `;
 
-const Title = ({}) => {
+const Title = ({scrollContact}) => {
 
     const [fillButton, setFillButton] = useState(false);
 
@@ -80,13 +80,13 @@ const Title = ({}) => {
                 </div>
                 <h1 style={{color:"#B9B9B9"}}>I build things that live on the internet.</h1>
                 <ParagraphCont><h3>I’m a front-end developer based in Vancouver, BC specializing in building and designing exceptional, high quality websites and applications. </h3></ParagraphCont>
-                <ContactButton style={{color:"#64FFDA"}} fillButton={fillButton} onMouseEnter={handleFillButton} onMouseLeave={handleFillButton}><p>Contact Me!</p></ContactButton>
+                <ContactButton style={{color:"#64FFDA"}} fillButton={fillButton} onMouseEnter={handleFillButton} onMouseLeave={handleFillButton} onClick={scrollContact}><p>Contact Me!</p></ContactButton>
             </Content> 
     </Container>
 }
 
 Title.defaultProps = {
-  
+scrollContact: () =>{}
 
 }
 

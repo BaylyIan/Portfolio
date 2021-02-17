@@ -9,21 +9,23 @@ const Nav = styled.div`
     display:flex;
     justify-content:space-between;
     background-color:#181818;
+    z-index:10;
     .logo{
         padding: 15px 0;
     }
 `;
 
-const NavBar = ({scrollHome, scrollAbout, scrollProjects }) => {
+const NavBar = ({scrollHome, scrollAbout, scrollProjects, scrollContact }) => {
     return (
         <Nav>
             <div>
-                <h2 style={{color:"white", fontSize:"16px"}}>Ian Bayly</h2>
+                <h2 style={{color:"white", fontSize:"20px"}}>IB</h2>
             </div>
             <Burger 
             scrollHome={scrollHome}
             scrollAbout={scrollAbout}
             scrollProjects={scrollProjects}
+            scrollContact={scrollContact}
             />
         </Nav>
     )
