@@ -38,7 +38,7 @@ const Content = styled.div`
     height:auto;
     display:flex;
     flex-direction:row;
-    padding:10px;
+    padding:1rem;
     flex-wrap:wrap;
     justify-content:center;
     @media (max-width: 768px) {
@@ -55,7 +55,7 @@ const Content = styled.div`
             position:absolute;
             color:black;
             font-size:16px;
-            margin-top:20px;
+            margin-top:1rem;
         }
     }
 `;
@@ -84,7 +84,7 @@ const Info = styled.div`
     @media (max-width: 656px) {
         width:100%;
         margin-left:0;
-        margin-top:10px;
+        margin-top:0.5rem;
     }
     & > div{
         & > h2{
@@ -109,7 +109,7 @@ const ProjCont = styled.div`
     @media (max-width: 656px) {
         flex-direction:column;
         width:20rem;
-        margin-top:40px;
+        margin-top:1rem;
     }
 `;
 
