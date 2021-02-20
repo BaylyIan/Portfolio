@@ -1,0 +1,44 @@
+.main{
+    width:100vw;
+    height: auto;
+    box-sizing: border-box;
+    // background-color:red;
+}
+.content{
+    display:flex;
+    height: auto;
+    @media (max-width: 768px) {
+        width:100%;
+        height:auto;
+        align-items:center;
+        flex-direction: column;
+      }
+}
+.back{
+    width:100vw;
+    height:auto;
+    display:flex;
+    align-items: flex-start;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    padding-left:2rem;
+}
+.footer{
+    width:100vw;
+}
+.intro, .axios, .sort, .mapping, .alert{
+    // background-color: aqua;
+    height:auto;
+    & > p{
+        color:white;
+        font-size: 16px;
+    }
+    & > h2{
+        // margin:0;
+        font-size: 16px;
+    }
+    @media (max-width: 768px) {
+        height:auto;
+        width:20rem;
+      }
+}
