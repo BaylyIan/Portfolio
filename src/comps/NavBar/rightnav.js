@@ -11,6 +11,7 @@ const Ul = styled.ul`
     margin-block-end: 0;
     font-size:20px;
     font-family: 'Roboto Mono';
+    z-index:9;
     li {
       padding: 6px 20px;
       color:#fff;

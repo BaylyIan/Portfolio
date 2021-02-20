@@ -42,6 +42,11 @@ const Burger = ({scrollHome, scrollAbout, scrollProjects, scrollContact}) =>{
         setOpen(!open);
     }
 
+    const HandleScrolls = (func, e) =>{
+        setOpen(false)
+        func(e)
+    }
+
     return(
         <>
         <StyledBurger open={open} onClick={handleOpen}>
@@ -51,10 +56,10 @@ const Burger = ({scrollHome, scrollAbout, scrollProjects, scrollContact}) =>{
         </StyledBurger>
         <RightNav 
         open={open}
-        scrollProjects={scrollProjects}
-        scrollHome={scrollHome}
-        scrollAbout={scrollAbout}
-        scrollContact={scrollContact}
+        scrollProjects={HandleScrolls.bind(this, scrollProjects)}
+        scrollHome={HandleScrolls.bind(this, scrollHome)}
+        scrollAbout={HandleScrolls.bind(this, scrollAbout)}
+        scrollContact={HandleScrolls.bind(this, scrollContact)}
         />
         </>
     )

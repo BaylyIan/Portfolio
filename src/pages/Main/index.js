@@ -14,7 +14,6 @@ const Main = () => {
     const ab = useRef(null);
     const hom = useRef(null);
     const con = useRef(null);
-
     const scrollProjects = () => proj.current.scrollIntoView();
     const scrollHome = () => hom.current.scrollIntoView();
     const scrollAbout = () => ab.current.scrollIntoView();
@@ -27,12 +26,12 @@ const Main = () => {
             scrollProjects={scrollProjects}
             scrollContact={scrollContact}
         /></div>
-            <div ref={hom} className={`title`}><Title scrollContact={scrollContact}/></div>
+            <div ref={hom} className={`title`}><Fade left><Title scrollContact={scrollContact}/></Fade></div>
             <div ref={ab} className={`about`} >
-            <AboutText />
-            <Skills />
+            <Fade><AboutText />
+            <Skills /></Fade>
             </div>
-            <div ref={proj} className={`projects`}><Projects /></div>
+            <div ref={proj} className={`projects`}><Fade><Projects /></Fade></div>
         <div ref={con}><Footer/></div>
     </div>
 }
