@@ -5,7 +5,7 @@ import Github from './github-green.png';
 import Linked from './linkedin-green.png';
 
 const Container = styled.div`
-    width:100%;
+    width:100vw;
     display:flex;
     flex-direction:row;
     justify-content:space-around;

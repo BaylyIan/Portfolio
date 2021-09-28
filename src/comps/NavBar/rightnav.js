@@ -63,7 +63,7 @@ const Ul = styled.ul`
   }
 `;
 
-const RightNav = ({ open, scrollHome, scrollAbout, scrollProjects, scrollContact, handleOpen }) => {
+const RightNav = ({ open, scrollHome, scrollAbout, scrollProjects, scrollContact }) => {
 
   return (
     <Ul open={open}>

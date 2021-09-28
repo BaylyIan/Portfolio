@@ -76,7 +76,7 @@ const Title = ({scrollContact}) => {
     return<Container>
             <Content>
                 <div style={{display:"flex", flexDirection:"row"}}> 
-                <h1 style={{color:"#FFFFFF"}}>Hi, I'm </h1><h1 style={{color:"#64FFDA", paddingLeft:"8px"}}>Ian.</h1>
+                <h1 style={{color:"#FFFFFF"}}>Hi, I'm </h1><h1 style={{color:"#64FFDA", marginLeft:"8px"}}>Ian.</h1>
                 </div>
                 <h1 style={{color:"#FFFFFF"}}>I build things that live on the internet.</h1>
                 <ParagraphCont><h3>I’m a front-end developer based in Vancouver, BC specializing in building and designing exceptional, high quality websites and applications. </h3></ParagraphCont>
