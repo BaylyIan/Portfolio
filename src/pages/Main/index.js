@@ -20,18 +20,20 @@ const Main = () => {
     const scrollContact = () => con.current.scrollIntoView();
 
     return <div className="main">
-        <div className="nav"><NavBar 
+         <div className="nav"><NavBar 
             scrollHome={scrollHome}
             scrollAbout={scrollAbout}
             scrollProjects={scrollProjects}
             scrollContact={scrollContact}
         /></div>
+         
             <div ref={hom} className={`title`}><Fade left><Title scrollContact={scrollContact}/></Fade></div>
+            <div ref={proj} className={`projects`}><Fade><Projects /></Fade></div>
             <div ref={ab} className={`about`} >
             <Fade><AboutText />
             <Skills /></Fade>
             </div>
-            <div ref={proj} className={`projects`}><Fade><Projects /></Fade></div>
+            
         <div ref={con}><Footer/></div>
     </div>
 }

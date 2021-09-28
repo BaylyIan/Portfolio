@@ -23,7 +23,7 @@ const Image = styled.img`
     }
 `;
 const Bar = styled.div`
-    width:90%auto;
+    width:90%;
     height:2px;
     background-color:#3A3A3A;
 `;
