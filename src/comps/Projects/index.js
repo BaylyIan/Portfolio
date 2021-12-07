@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import meditracker from './medi_bg.png';
 import walk from './walk_bg.png';
 import crm from './crm.png'
+import replay from './replay.png'
 import { FiGithub } from 'react-icons/fi';
 import { FiPlay } from 'react-icons/fi';
 import { FiLayers } from 'react-icons/fi';
@@ -136,6 +137,14 @@ const Projects = ({ }) => {
             extra2:'Password: admin'
         },
         {
+            title: 'Replay',
+            role: 'Full-Stack Developer',
+            desc: 'A social media application built around the love of music. Create playlists and share them with your fiends.',
+            github: 'https://github.com/BaylyIan/replay-v2',
+            demo: 'https://replay-v2-5v0jpj63d-baylyian.vercel.app/',
+            image:replay,
+        },
+        {
             title: 'Medicine Tracker',
             role: 'Fullstack Developer ',
             desc: 'Our team was assigned to build a to-do list application with various sorting/filtering features features. Using React, MySql and Express, we built a medication tracker which allows you to keep track of all your medications for the day. ',
@@ -151,6 +160,7 @@ const Projects = ({ }) => {
             demo: 'https://www.figma.com/proto/JtKPACD7VGerurfYImEY8J/WALK?node-id=1%3A82&scaling=min-zoom',
             image:walk
         }
+
     ]
 
     return <Container>
