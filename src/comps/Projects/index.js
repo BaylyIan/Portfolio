@@ -141,7 +141,7 @@ const Projects = ({ }) => {
             role: 'Full-Stack Developer',
             desc: 'A social media application built around the love of music. Create playlists and share them with your fiends.',
             github: 'https://github.com/BaylyIan/replay-v2',
-            demo: 'https://replay-v2-5v0jpj63d-baylyian.vercel.app/',
+            demo: 'https://replay-v2-8t7v5nwqs-baylyian.vercel.app/',
             image:replay,
         },
         {
