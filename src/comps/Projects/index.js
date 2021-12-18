@@ -4,6 +4,7 @@ import meditracker from './medi_bg.png';
 import walk from './walk_bg.png';
 import crm from './crm.png'
 import replay from './replay.png'
+import crypto from './crypto.png'
 import { FiGithub } from 'react-icons/fi';
 import { FiPlay } from 'react-icons/fi';
 import { FiLayers } from 'react-icons/fi';
@@ -141,12 +142,20 @@ const Projects = ({ }) => {
             role: 'Full-Stack Developer',
             desc: 'A social media application built around the love of music. Create playlists and share them with your fiends.',
             github: 'https://github.com/BaylyIan/replay-v2',
-            demo: 'https://replay-v2-8t7v5nwqs-baylyian.vercel.app/',
+            demo: 'https://replay-v2.vercel.app/',
             image:replay,
         },
         {
+            title: 'Cryptoverse',
+            role: 'Full-Stack Developer',
+            desc: 'A cryptocurrency platform that shows live updates on crypto prices, trends, news, exhanges, and more. Built with React, Redux Toolkit, and Rapid API.',
+            github: 'https://github.com/BaylyIan/cryptoapp',
+            demo: 'https://cryptoapp-khaki.vercel.app/',
+            image:crypto
+        },
+        {
             title: 'Medicine Tracker',
-            role: 'Fullstack Developer ',
+            role: 'Full-Stack Developer ',
             desc: 'Our team was assigned to build a to-do list application with various sorting/filtering features features. Using React, MySql and Express, we built a medication tracker which allows you to keep track of all your medications for the day. ',
             github: "https://github.com/RinaHan/Tracking-List",
             demo: "https://tracking-list-q42m6u091.vercel.app/",
