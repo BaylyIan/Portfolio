@@ -18,10 +18,6 @@ const Modal = styled.div`
     position:absolute;
     background-color:white;
     z-index:5;
-    & > button {
-        width:150px;
-        height:50px;
-    }
     & > div {
         width:90%;
         height: 90vh;
@@ -29,7 +25,18 @@ const Modal = styled.div`
         justify-content:center;
         align-items:center;
         flex-direction:column;
-
+        & > button {
+        width:150px;
+        height:50px;
+        background-color:white;
+        margin-top:20px;
+        border:2px solid black;
+        :hover{
+            background-color:black;
+            color:white;
+        
+        }
+    }
     }
 `;
 
