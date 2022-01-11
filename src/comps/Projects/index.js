@@ -4,6 +4,7 @@ import meditracker from './medi_bg.png';
 import walk from './walk_bg.png';
 import crm from './crm.png'
 import replay from './replay.png'
+import crypto from './crypto.png'
 import { FiGithub } from 'react-icons/fi';
 import { FiPlay } from 'react-icons/fi';
 import { FiLayers } from 'react-icons/fi';
@@ -141,12 +142,20 @@ const Projects = ({ }) => {
             role: 'Full-Stack Developer',
             desc: 'A social media application built around the love of music. Create playlists and share them with your fiends.',
             github: 'https://github.com/BaylyIan/replay-v2',
-            demo: 'https://replay-v2-5v0jpj63d-baylyian.vercel.app/',
+            demo: 'https://replay-v2.vercel.app/',
             image:replay,
         },
         {
+            title: 'Cryptoverse',
+            role: 'Full-Stack Developer',
+            desc: 'A cryptocurrency platform that shows live updates on crypto prices, trends, news, exhanges, and more. Built with React, Redux Toolkit, and Rapid API.',
+            github: 'https://github.com/BaylyIan/cryptoapp',
+            demo: 'https://cryptoapp-khaki.vercel.app/',
+            image:crypto
+        },
+        {
             title: 'Medicine Tracker',
-            role: 'Fullstack Developer ',
+            role: 'Full-Stack Developer ',
             desc: 'Our team was assigned to build a to-do list application with various sorting/filtering features features. Using React, MySql and Express, we built a medication tracker which allows you to keep track of all your medications for the day. ',
             github: "https://github.com/RinaHan/Tracking-List",
             demo: "https://tracking-list-q42m6u091.vercel.app/",
@@ -183,65 +192,6 @@ const Projects = ({ }) => {
                     />
                 )
             }) : null}
-
-            {/* <ProjCont>
-                <Project src={meditracker}/>
-                <Info>
-                    <div>
-                    <h2>Replay</h2>
-                    <p style={{fontStyle:"italic", fontWeight:"300"}}>Full-stack developer</p> 
-                    <p>A playlist sharing application built using React, Node.js, Express, MySQL, and Heroku.   </p>
-                    </div>
-                    <div>
-                    <a target="_blank" style={{textDecoration:"none"}} href="https://github.com/BaylyIan/Replay">
-                        <FiGithub size={27} style={{color:"white"}}/>
-                    </a>
-                    <a target="_blank" style={{textDecoration:"none"}} href="https://tracking-list-q42m6u091.vercel.app/">
-                        <FiPlay size={27} style={{color:"white", marginLeft:"20px"}}/>
-                    </a>
-                    </div>
-                </Info>
-            </ProjCont> 
-
-            <ProjCont>
-                <Project src={meditracker}/>
-                <Info>
-                    <div>
-                    <h2>Medication Tracker</h2>
-                    <p style={{fontStyle:"italic", fontWeight:"300"}}>Front-end developer / UX/UI Designer</p> 
-                    <p>Our team was assigned to build a to-do list application with various sorting/filtering features features. Using React, MySql and Express, we built a medication tracker which allows you to keep track of all your medications for the day.   </p>
-                    </div>
-                    <div>
-                    <a target="_blank" style={{textDecoration:"none"}} href="https://github.com/RinaHan/Tracking-List">
-                        <FiGithub size={27} style={{color:"white"}}/>
-                    </a>
-                    <a target="_blank" style={{textDecoration:"none"}} href="https://tracking-list-q42m6u091.vercel.app/">
-                        <FiPlay size={27} style={{color:"white", marginLeft:"20px"}}/>
-                    </a>
-                    </div>
-                </Info>
-            </ProjCont>
-
-            <ProjCont>
-                <Project src={walk}/>
-                <Info>
-                    <div>
-                    <h2>Walk</h2>
-                    <p style={{fontStyle:"italic", fontWeight:"300"}}>Front-end developer / UX/UI Designer</p> 
-                    <p>Walk is the first social media dating app built for dogs. With a simple, intuitive user interface complimented by a attractive colour pallete, Walk connects people through their common love of dogs. Built in React Native, features included profile setup, posts, likes, chatting, and more.</p>
-                    </div>
-                    <div>
-                    <a target="_blank" style={{textDecoration:"none"}} href="https://github.com/BaylyIan/Walk">
-                        <FiGithub size={27} style={{color:"white"}}/>
-                    </a>
-                    <a target="_blank" style={{textDecoration:"none"}} href="https://www.figma.com/proto/JtKPACD7VGerurfYImEY8J/WALK?node-id=1%3A82&scaling=min-zoom">
-                        <FiPlay size={27} style={{color:"white", marginLeft:"20px"}}/>
-                    </a>
-                    </div>
-                </Info>
-            </ProjCont>  */}
-
-
         </Content>
     </Container>
 }

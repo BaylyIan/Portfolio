@@ -71,7 +71,6 @@ const RightNav = ({ open, scrollHome, scrollAbout, scrollProjects, scrollContact
       <li onClick={scrollAbout}>About</li>
       <li onClick={scrollProjects}>Projects</li>
       <li onClick={scrollContact}>Contact</li>
-      <a href={Pdf} target="_blank" style={{textDecoration:"none"}}><li >Resume</li></a>
     </Ul>
   )
 }
