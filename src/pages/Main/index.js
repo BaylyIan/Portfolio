@@ -59,7 +59,7 @@ const Main = () => {
         {modal &&<Modal>
             <div>
             <h1> I have a new portfolio! Check it out here:</h1>
-            <button onClick={(e) => window.location = 'https://portfolio-v2-r5l20vvwn-baylyian.vercel.app/'}>New Site</button>
+            <button onClick={() => window.location = 'https://portfolio-v2-r5l20vvwn-baylyian.vercel.app/'}>New Site</button>
             <button onClick={()=> {
                 setModal(false)
             }}>Close</button>
